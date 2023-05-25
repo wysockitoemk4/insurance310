@@ -152,8 +152,8 @@ class _ListViewItem extends StatelessWidget {
                   ),
                   margin: const EdgeInsets.all(10),
                   padding: const EdgeInsets.all(10),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         '0',
                         style: TextStyle(
