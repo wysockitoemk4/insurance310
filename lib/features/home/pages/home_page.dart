@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Can\'t Wait 🤩'),
+        title: const Text('Przegląd/Ubezpieczenia'),
       ),
       body: const _HomePageBody(),
       floatingActionButton: FloatingActionButton(
@@ -56,7 +56,7 @@ class _HomePageBody extends StatelessWidget {
                   key: ValueKey(doc.id),
                   background: const DecoratedBox(
                     decoration: BoxDecoration(
-                      color: Colors.red,
+                      color: Color.fromARGB(255, 242, 155, 4),
                     ),
                     child: Align(
                       alignment: Alignment.centerRight,
@@ -161,7 +161,7 @@ class _ListViewItem extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text('days left'),
+                      Text('pozostało dni'),
                     ],
                   ),
                 ),
