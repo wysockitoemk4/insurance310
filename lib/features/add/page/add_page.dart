@@ -74,7 +74,7 @@ class _AddPageState extends State<AddPage> {
                 },
                 selectedDateFormatted: _releaseDate == null
                     ? null
-                    : DateFormat.yMMMMEEEEd().format(_releaseDate!),
+                    : DateFormat.yMMMMEEEEd("pl").format(_releaseDate!),
               ),
             );
           },

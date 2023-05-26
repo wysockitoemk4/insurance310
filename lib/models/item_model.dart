@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 class ItemModel {
   ItemModel({
@@ -18,6 +19,7 @@ class ItemModel {
   }
 
   String releaseDateFormatted() {
-    return DateFormat.yMMMEd().format(releaseDate);
+    initializeDateFormatting('pl', null);
+    return DateFormat.yMMMMEEEEd('pl').format(releaseDate);
   }
 }
